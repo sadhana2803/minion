@@ -1,0 +1,217 @@
+.sadhu{
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    top: 100px;
+    left: 540px;
+}
+.container{
+    width: 500px;
+    height: 500px;
+    border: 2px solid lightblue;
+    position: absolute;
+    top: 50px;
+    left: 450px;
+}
+.weye1{
+    width: 55px;
+    height: 55px;
+    border: 2px solid silver;
+    position: absolute;
+    top: 85px;
+    left: 163px;
+    border-radius: 100%;
+    background-color: white;
+    box-shadow: 3px 3px 3px 3px silver;
+}
+.weye2{
+    width: 55px;
+    height: 55px;
+    border: 2px solid silver;
+    position: absolute;
+    top: 85px;
+    left: 233px;
+    border-radius: 100%;
+    background-color: white;
+    box-shadow: 2px 2px 3px 3px silver;
+}
+.beye1{
+    width: 20px;
+    height: 20px;
+    border: 2px solid black;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    border-radius: 100%;
+    background-color: black;
+    box-shadow: 3px 3px 8px 8px goldenrod;
+}
+.beye2{
+    width: 20px;
+    height: 20px;
+    border: 2px solid black;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    border-radius: 100%;
+    background-color: black;
+    box-shadow: 3px 3px 8px 8px goldenrod;
+}
+@keyframes beye1 {
+    0%{
+        transform: rotate(60deg);
+        transform-origin: top;
+    } 
+    25%{
+        transform: rotate(270deg);
+        transform-origin: bottom;
+    } 
+    50%{
+        transform: rotate(40deg);
+        transform-origin: top;
+    } 
+    75%{
+        transform: rotate(-90deg);
+        transform-origin: bottom;
+    }
+    100%{
+        transform: rotate(0deg);
+        transform-origin: top;
+    }
+    125%{
+        transform: rotate(300deg);
+        transform-origin: bottom;
+    }
+    150%{
+        transform: rotate(-180deg);
+        transform-origin: top;
+    }
+    175%{
+        transform: rotate(180deg);
+        transform-origin: bottom;
+    }
+    200%{
+        transform: rotate(90deg);
+        transform-origin: top;
+    }
+
+}
+.beye1{
+    animation: beye1 1s infinite;
+} 
+@keyframes beye2 {
+    0%{
+        transform: rotate(-60deg);
+        transform-origin: top;
+    } 
+    25%{
+        transform: rotate(-270deg);
+        transform-origin: bottom;
+    } 
+    50%{
+        transform: rotate(-40deg);
+        transform-origin: top;
+    } 
+    75%{
+        transform: rotate(90deg);
+        transform-origin: bottom;
+    }
+    100%{
+        transform: rotate(0deg);
+        transform-origin: top;
+    }
+    125%{
+        transform: rotate(-300deg);
+        transform-origin: bottom;
+    }
+    150%{
+        transform: rotate(180deg);
+        transform-origin: top;
+    }
+    175%{
+        transform: rotate(-180deg);
+        transform-origin: bottom;
+    }
+    200%{
+        transform: rotate(-90deg);
+        transform-origin: top;
+    }
+
+}
+.beye2{
+    animation: beye2 2s infinite;
+} 
+.g1{
+    width: 45px;
+    height: 45px;
+    border: 10px solid rgb(148, 130, 130);
+    position: absolute;
+    top: 212px;
+    left: 622px;
+    border-radius: 100%;
+}
+.g2{
+    width: 45px;
+    height: 45px;
+    border: 10px solid rgb(148, 130, 130);
+    position: absolute;
+    top: 212px;
+    left: 690px;
+    border-radius: 100%;
+}
+@keyframes g1{
+    0%{
+        border-color: pink;
+    }
+    25%{
+        border-color: lightblue;
+    }
+    50%{
+        border-color: lightsalmon;
+    }
+    75%{
+        border-color:darkgoldenrod ;
+    }
+    100%{
+        border-color: black;
+    }
+    125%{
+        border-color: rgb(148, 130, 130);
+    }
+    150%{
+        border-color: rgb(148, 130, 130);
+    }
+}
+/* .g1{
+    animation:g1 1s infinite ;
+} */
+@keyframes g2{
+    0%{
+        border-color: black;
+    }
+    25%{
+        border-color: lightblue;
+    }
+    50%{
+        border-color: lightsalmon;
+    }
+    75%{
+        border-color:darkgoldenrod ;
+    }
+    100%{
+        border-color: black;
+    }
+    125%{
+        border-color: rgb(148, 130, 130);
+    }
+    150%{
+        border-color: rgb(148, 130, 130);
+    }
+}
+/* .g2{
+    animation:g2 1s infinite ;
+} */
+.glass,.g1,.g2{
+    animation:g1 1s infinite;
+    animation:g2 1s infinite;
+}
